@@ -1,0 +1,29 @@
+<h1>Listing workshops</h1>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Date on</th>
+    <th>Venue</th>
+    <th>Restaurant</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @workshops.each do |workshop| %>
+  <tr>
+    <td><%= workshop.number %></td>
+    <td><%= workshop.date_on %></td>
+    <td><%= workshop.venue_id %></td>
+    <td><%= workshop.restaurant_id %></td>
+    <td><%= link_to 'Show', workshop %></td>
+    <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
+    <td><%= link_to 'Destroy', workshop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Workshop', new_workshop_path %>

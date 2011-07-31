@@ -1,0 +1,33 @@
+<%= form_for(@workshop) do |f| %>
+  <% if @workshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workshop.errors.count, "error") %> prohibited this workshop from being saved:</h2>
+
+      <ul>
+      <% @workshop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :date_on %><br />
+    <%= f.date_select :date_on %>
+  </div>
+  <div class="field">
+    <%= f.label :venue_id %><br />
+    <%= f.text_field :venue_id %>
+  </div>
+  <div class="field">
+    <%= f.label :restaurant_id %><br />
+    <%= f.text_field :restaurant_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
