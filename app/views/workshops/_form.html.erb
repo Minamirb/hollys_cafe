@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :number %><br />
-    <%= f.text_field :number %>
+    <%= f.number_field :number %>
   </div>
   <div class="field">
     <%= f.label :date_on %><br />
@@ -21,11 +21,13 @@
   </div>
   <div class="field">
     <%= f.label :venue_id %><br />
-    <%= f.text_field :venue_id %>
+    <!-- %= f.number_field :venue_id % -->
+    <%= f.select :venue_id, @venues.map{|m| [m.name, m.id]} %>
   </div>
   <div class="field">
     <%= f.label :restaurant_id %><br />
-    <%= f.text_field :restaurant_id %>
+    <!-- %= f.number_field :restaurant_id % -->
+    <%= f.select :restaurant_id, @restaurants.map{|m| [m.name, m.id]} %>
   </div>
   <div class="actions">
     <%= f.submit %>
