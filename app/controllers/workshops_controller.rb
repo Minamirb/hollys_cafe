@@ -26,6 +26,7 @@ class WorkshopsController < ApplicationController
   def new
     @workshop = Workshop.new
     @venues = Venue.all
+    @restaurants = Restaurant.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -37,6 +38,7 @@ class WorkshopsController < ApplicationController
   def edit
     @workshop = Workshop.find(params[:id])
     @venues = Venue.all
+    @restaurants = Restaurant.all
   end
 
   # POST /workshops
