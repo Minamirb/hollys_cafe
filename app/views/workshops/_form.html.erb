@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :restaurant_id %><br />
-    <%= f.text_field :restaurant_id %>
+    <%= f.collection_select(:restaurant_id, @restaurants, :id, :name) %>
   </div>
   <div class="actions">
     <%= f.submit %>
