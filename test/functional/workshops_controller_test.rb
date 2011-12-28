@@ -13,6 +13,11 @@ class WorkshopsControllerTest < ActionController::TestCase
 
   test "should get new" do
     get :new
+    # whether @restaurants has all records of the Restaurants table or not
+    assert_equal Restaurant.all.length, assigns(:restaurants).length, 'the number of data is wrong which @restaurants has'
+
+    # whether @venues has all records of the Venues table or not
+    assert_equal Venue.all.length, assigns(:venues).length, 'the number of data is wrong which @venues has'
     assert_response :success
   end
 
