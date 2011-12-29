@@ -36,6 +36,11 @@ class WorkshopsControllerTest < ActionController::TestCase
 
   test "should get edit" do
     get :edit, :id => @workshop.to_param
+    # whether @restaurants has all records of the Restaurants table or not
+    assert_equal Restaurant.all.length, assigns(:restaurants).length, 'found restaurants row number is wrong'
+
+    # whether @venues has all records of the Venues table or not
+    assert_equal Venue.all.length, assigns(:venues).length, 'found venues row number is wrong'
     assert_response :success
   end
 
