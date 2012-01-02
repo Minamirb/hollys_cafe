@@ -34,6 +34,19 @@ class WorkshopsControllerTest < ActionController::TestCase
     end
   end
 
+  # test whether the drop-down list of the venue_id is created correctly or not
+  test "should show venue_id drop-down for new" do
+    get :new, :id => @workshop.to_param
+    assert_select 'select#workshop_venue_id' do
+      # number of option tags
+      assert_select 'option', assigns(:venues).length
+
+      # text on drop-down list
+      assert_select 'option[value="1"]', '1st_venue_name', 'found the 1st option of venue_id drop-down list is wrong'
+      assert_select 'option[value="2"]', '2nd_venue_name', 'found the 2nd option of venue_id drop-down list is wrong'
+    end
+  end
+
   test "should create workshop" do
     assert_difference('Workshop.count') do
       post :create, :workshop => @workshop.attributes
@@ -67,6 +80,18 @@ class WorkshopsControllerTest < ActionController::TestCase
       # text on drop-down list
       assert_select 'option[value="1"]', '1st_restaurant_name', 'found the 1st option of restaurant_id drop-down list is wrong'
       assert_select 'option[value="2"]', '2nd_restaurant_name', 'found the 2nd option of restaurant_id drop-down list is wrong'
+    end
+  end
+
+  # test whether the drop-down list of the venue_id is created correctly or not
+  test "should show venue_id drop-down for edit" do
+    get :edit, :id => @workshop.to_param
+    assert_select 'select#workshop_venue_id' do
+      # number of option tags
+      assert_select 'option', assigns(:venues).length
+      # text on drop-down list
+      assert_select 'option[value="1"]', '1st_venue_name', 'found the 1st option of venue_id drop-down list is wrong'
+      assert_select 'option[value="2"]', '2nd_venue_name', 'found the 2nd option of venue_id drop-down list is wrong'
     end
   end
 
