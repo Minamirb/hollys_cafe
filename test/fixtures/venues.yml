@@ -1,9 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  address: MyString
-  name: MyString
+  id: 1
+  address: 1st_venue_address
+  name: 1st_venue_name
 
 two:
-  address: MyString
-  name: MyString
+  id: 2
+  address: 2nd_venue_address
+  name: 2nd_venue_name
