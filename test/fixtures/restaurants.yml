@@ -1,15 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  address: MyString
-  name: MyString
-  venue_id: 1
-  url: MyString
-  comment: MyString
+  id: 1
+  address: 1st_restaurant_address
+  name: 1st_restaurant_name
+  url: 1st_restaurant_url
+  comment: 1st_restaurant_comment
 
 two:
-  address: MyString
-  name: MyString
-  venue_id: 1
-  url: MyString
-  comment: MyString
+  id: 2
+  address: 2nd_restaurant_address
+  name: 2nd_restaurant_name
+  url: 2nd_restaurant_url
+  comment: 2nd_restaurant_comment
