@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    attributes:
+      restaurant:
+        address: "住所"
+        name: "名前"
+        url: "URL"
+        comment: "コメント"
+      venue:
+        address: "住所"
+        name: "名前"
+      workshop:
+        number: "回数"
+        date_on: "開催日"
+    
