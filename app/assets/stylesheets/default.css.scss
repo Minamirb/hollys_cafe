@@ -1,0 +1,336 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20px 0;
+	background: #FFFFFF;
+	font: normal small Georgia, "Times New Roman", Times, serif;
+	color: #999999;
+}
+
+h1, h2, h3 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+p, blockquote, ul, ol {
+}
+
+p {
+}
+
+blockquote {
+	margin-left: 3em;
+}
+
+ul {
+	margin-left: 3em;
+}
+
+ul li {
+}
+
+ol {
+	margin-left: 3em;
+}
+
+ol li {
+}
+
+a {
+	color: #3366FF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF6600;
+}
+
+img {
+}
+
+/* Boxed Style */
+
+.boxed {
+}
+
+.boxed .title {
+	padding: 5px 10px;
+	background: url(images/img07.gif) repeat-x left bottom;
+	font-size: 1em;
+}
+
+.boxed .content {
+	padding: 20px 20px 40px 20px;
+}
+
+/* Post */
+
+.post {
+	padding: 20px;
+}
+
+.post .title {
+	margin-bottom: 20px;
+}
+
+.post .date {
+	float: left;
+	width: 90px;
+	font-size: x-small;
+}
+
+.post .date .month {
+}
+
+.post .date .day {
+}
+
+.post .date .year {
+}
+
+.post .meta {
+	float: left;
+	padding-left: 20px;
+	border-left: 1px dotted #FFB46A;
+	font-size: x-small;
+}
+
+.post .meta p {
+}
+
+.post .story {
+	clear: both;
+}
+
+.post .story p, .post .story blockquote, .post .story ul, .post .story ol {
+	margin-bottom: 1.5em;
+	line-height: 180%;
+}
+
+/* Logo */
+
+#logo {
+	width: 700px;
+	height: 220px;
+	margin: 0 auto;
+}
+
+#logo h1 {
+	float: left;
+	width: 180px;
+	height: 160px;
+	padding: 20px;
+	background: #FFB46A url(images/img01.gif) no-repeat;
+	text-align: right;
+	font-size: 2.2em;
+}
+
+#logo h2 {
+	float: right;
+	width: 420px;
+	height: 150px;
+	padding: 30px 20px 20px 20px;
+	background: #319595 url(images/img02.gif) no-repeat;
+	font-size: 1.4em;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+	width: 700px;
+	margin: 0 auto;
+	background: url(images/img03.gif) repeat-y;
+}
+
+#extra {
+	clear: both;
+	height: 20px;
+	background: url(images/img06.gif) no-repeat;
+}
+
+/* Content > Main */
+
+#main {
+	float: right;
+	width: 460px;
+	background: url(images/img05.gif) no-repeat right top;
+	color: #FFA954;
+}
+
+#main a {
+	color: #FF7F00;
+}
+
+/* Content > Main > Welcome */
+
+#welcome {
+}
+
+/* Content > Main > Example */
+
+#example {
+}
+
+/* Content > Sidebar */
+
+#sidebar {
+	float: left;
+	width: 220px;
+	background: url(images/img04.gif) no-repeat;
+	color: #6BB3B3;
+}
+
+#sidebar a {
+	color: #319595;
+}
+
+/* Content > Sidebar > Login */
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+#login input {
+	margin-bottom: 5px;
+	padding: 2px 5px;
+	border: 1px solid #385B88;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#inputtext1, #inputtext2 {
+	color: #385B88;
+}
+
+#inputsubmit1 {
+	background: #385B88;
+	color: #FFFFFF;
+}
+
+/* Content > Sidebar > Menu */
+
+#menu {
+	padding: 20px 0;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: block;
+	padding-bottom: 1px;
+	background: url(images/img07.gif) repeat-x left bottom;
+}
+
+#menu a {
+	display: block;
+	width: 170px;
+	padding: 10px 20px 10px 30px;
+	text-decoration: none;
+}
+
+#menu a:hover, #menu .active a {
+	background: #CDE5E5 url(images/img08.gif) no-repeat 10px 50%;
+}
+
+/* Content > Sidebar > Updates*/
+
+#updates {
+}
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+/* Content > Sidebar > Partners*/
+
+#partners {
+}
+
+#partners .content {
+	padding: 10px 0;
+}
+
+#partners ul {
+	margin: 0;
+	border-bottom: 1px solid #D1BC5C;
+	list-style: none;
+	line-height: normal;
+}
+
+#partners li {
+	padding: 10px;
+	border-top: 1px solid #D1BC5C;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 660px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+#footer p {
+	margin: 0;
+	text-align: right;
+	font-size: x-small;
+}
+
+/* Footer > Legal */
+
+#legal {
+}
+
+/* Footer > Links */
+
+#links {
+}
