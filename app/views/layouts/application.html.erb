@@ -1,14 +1,75 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>HollysCafe</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div id="logo">
+  <h1><a href="#">Holly's Cafe</a></h1>
+  <h2><a href="http://qwik.jp/minamirb/FrontPage.html">By Minami.rb</a></h2>
+</div>
+<div id="content">
+  <div id="sidebar">
+    <div id="menu">
+      <ul>
+        <li><a href="#" title="">About Us</a></li>
+        <li class="active"><a href="#" title="">Workshops</a></li>
+        <li><a href="#" title="">Restaurants</a></li>
+        <li><a href="#" title="">Venues</a></li>
+        <li><a href="#" title="">Support</a></li>
+      </ul>
+    </div>
+    <div id="login" class="boxed">
+      <h2 class="title">Client Account</h2>
+      <div class="content">
+        <form id="form1" method="post" action="#">
+          <fieldset>
+          <legend>Sign-In</legend>
+          <label for="inputtext1">Client ID:</label>
+          <input id="inputtext1" type="text" name="inputtext1" value="" />
+          <label for="inputtext2">Password:</label>
+          <input id="inputtext2" type="password" name="inputtext2" value="" />
+          <input id="inputsubmit1" type="submit" name="inputsubmit1" value="Sign In" />
+          <p><a href="#">Forgot your password?</a></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="updates" class="boxed">
+      <h2 class="title">Recent Updates</h2>
+      <div class="content">
+        <ul>
+          <li>
+            <h3>March 5, 2007</h3>
+            <p><a href="#">In posuere eleifend odio quisque semper augue mattis wisi maecenas ligula&#8230;</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="main">
+    <div id="welcome" class="post">
 
 <%= yield %>
 
+    </div>
+  </div>
+  <div id="extra" style="clear: both;"></div>
+</div>
+<div id="footer">
+  <p id="legal">Copyright &copy; 2007 Tropical. All Rights Reserved. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+  <p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+</div>
 </body>
 </html>
